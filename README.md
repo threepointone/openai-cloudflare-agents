@@ -13,4 +13,4 @@ explorations of openai's agents with cloudflare's agents.
 
 ## currently
 
-- `[basic](/examples/basic/)`: the simplest example. make a request to a cloudflare agent, get an openai response.
+- [`basic`](/examples/basic/): the simplest example. make a request to a cloudflare agent, get an openai response.
