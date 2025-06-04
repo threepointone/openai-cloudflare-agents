@@ -1,0 +1,52 @@
+diff --git a/node_modules/@openai/agents-core/dist/index.js b/node_modules/@openai/agents-core/dist/index.js
+index 5a4a9a4..60230be 100644
+--- a/node_modules/@openai/agents-core/dist/index.js
++++ b/node_modules/@openai/agents-core/dist/index.js
+@@ -33,7 +33,7 @@ addTraceProcessor(defaultProcessor());
+ const cleanup = async () => {
+     await getGlobalTraceProvider().shutdown();
+ };
+-if (typeof process !== 'undefined') {
++if (typeof process !== 'undefined' && typeof process.on === 'function') {
+     // handling Node.js process termination
+     // Handle normal termination
+     process.on('beforeExit', cleanup);
+diff --git a/node_modules/@openai/agents-core/dist/index.mjs b/node_modules/@openai/agents-core/dist/index.mjs
+index bc700cf..239172b 100644
+--- a/node_modules/@openai/agents-core/dist/index.mjs
++++ b/node_modules/@openai/agents-core/dist/index.mjs
+@@ -33,7 +33,7 @@ addTraceProcessor(defaultProcessor());
+ const cleanup = async () => {
+     await getGlobalTraceProvider().shutdown();
+ };
+-if (typeof process !== 'undefined') {
++if (typeof process !== 'undefined' && typeof process.on === 'function') {
+     // handling Node.js process termination
+     // Handle normal termination
+     process.on('beforeExit', cleanup);
+diff --git a/node_modules/@openai/agents-core/dist/tracing/index.js b/node_modules/@openai/agents-core/dist/tracing/index.js
+index 321aa19..4c58106 100644
+--- a/node_modules/@openai/agents-core/dist/tracing/index.js
++++ b/node_modules/@openai/agents-core/dist/tracing/index.js
+@@ -33,7 +33,7 @@ export function setTracingDisabled(disabled) {
+ const cleanup = async () => {
+     await getGlobalTraceProvider().shutdown();
+ };
+-if (typeof process !== 'undefined') {
++if (typeof process !== 'undefined' && typeof process.on === 'function') {
+     // handling Node.js process termination
+     // Handle normal termination
+     process.on('beforeExit', cleanup);
+diff --git a/node_modules/@openai/agents-core/dist/tracing/index.mjs b/node_modules/@openai/agents-core/dist/tracing/index.mjs
+index ba63f19..88cd165 100644
+--- a/node_modules/@openai/agents-core/dist/tracing/index.mjs
++++ b/node_modules/@openai/agents-core/dist/tracing/index.mjs
+@@ -33,7 +33,7 @@ export function setTracingDisabled(disabled) {
+ const cleanup = async () => {
+     await getGlobalTraceProvider().shutdown();
+ };
+-if (typeof process !== 'undefined') {
++if (typeof process !== 'undefined' && typeof process.on === 'function') {
+     // handling Node.js process termination
+     // Handle normal termination
+     process.on('beforeExit', cleanup);
