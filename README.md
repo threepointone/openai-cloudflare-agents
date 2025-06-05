@@ -2,7 +2,7 @@
 
 ## what is this?
 
-explorations of openai's agents with cloudflare's agents.
+explorations of [openai's agents](https://github.com/openai/openai-agents-js/) with [cloudflare's agents](https://github.com/cloudflare/agents).
 
 ## how to use
 
