@@ -12,10 +12,10 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "@cloudflare/vite-plugin": "^1.5.0",
-    "@cloudflare/workers-types": "^4.20250610.0",
-    "@openai/agents": "^0.0.5",
-    "@types/react": "^19.1.7",
+    "@cloudflare/vite-plugin": "^1.7.0",
+    "@cloudflare/workers-types": "^4.20250617.0",
+    "@openai/agents": "^0.0.8",
+    "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.5.2",
     "agents": "^0.0.95",
@@ -26,13 +26,13 @@
     "typescript": "^5.8.3",
     "vite": "^6.3.5",
     "vite-plugin-devtools-json": "^0.2.0",
-    "wrangler": "^4.19.1"
+    "wrangler": "^4.20.1"
   },
   "workspaces": [
     "examples/*"
   ],
-  "packageManager": "npm@11.4.1",
+  "packageManager": "npm@11.4.2",
   "dependencies": {
-    "zod": "^3.25.57"
+    "zod": "^3.25.67"
   }
 }
